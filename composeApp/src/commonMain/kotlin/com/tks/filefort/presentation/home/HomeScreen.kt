@@ -57,10 +57,10 @@ class HomeScreen : Screen {
                         navigator.push(FileListScreen(event.fileType))
                     }
                     is NavigationEvent.NavigateToFavorites -> {
-                        // TODO: Navigate to favorites screen
+                        // TODO: code to navigate to favrotes
                     }
                     is NavigationEvent.NavigateToSafeFolder -> {
-                        // TODO: Navigate to safe folder screen
+                        // TODO: code to navigate to safe folder
                     }
                     else -> Unit
                 }
