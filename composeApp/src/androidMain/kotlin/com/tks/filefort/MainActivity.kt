@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Navigator(HomeScreen())
+            Navigator(HomeScreen()) //navigate to home screen from here using voyager library.
 
         }
     }

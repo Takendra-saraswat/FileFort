@@ -29,7 +29,7 @@ class SplashActivity: ComponentActivity() {
 
         // Navigate to MainActivity after 3 seconds
         CoroutineScope(Dispatchers.Main).launch {
-            delay(3000)
+            delay(3000)// time to delay before navigating to home screen
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             finish()
         }
