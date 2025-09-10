@@ -32,6 +32,8 @@ import com.tks.filefort.presentation.files.FileListScreen
 import com.tks.filefort.presentation.storage.StorageInfoScreen
 import kotlinx.coroutines.launch
 // home screen where all files type will be presented to user
+//
+//new comments added
 class HomeScreen : Screen {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
@@ -55,10 +57,10 @@ class HomeScreen : Screen {
                         navigator.push(FileListScreen(event.fileType))
                     }
                     is NavigationEvent.NavigateToFavorites -> {
-                        // TODO: Navigate to favorites screen
+                        // TODO: code to navigate to favorites
                     }
                     is NavigationEvent.NavigateToSafeFolder -> {
-                        // TODO: Navigate to safe folder screen
+                        // TODO: code to navigate to safe folder
                     }
                     else -> Unit
                 }
