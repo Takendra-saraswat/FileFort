@@ -31,9 +31,6 @@ import com.tks.filefort.presentation.components.DrawerContent
 import com.tks.filefort.presentation.files.FileListScreen
 import com.tks.filefort.presentation.storage.StorageInfoScreen
 import kotlinx.coroutines.launch
-// home screen where all files type will be presented to user
-//
-//new comments added
 class HomeScreen : Screen {
     @OptIn(ExperimentalMaterial3Api::class)
     @Composable
