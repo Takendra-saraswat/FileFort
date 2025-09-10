@@ -19,10 +19,10 @@ import com.tks.filefort.presentation.home.HomeScreenModel
 import com.tks.filefort.presentation.storage.StorageInfoScreenModel
 import org.koin.dsl.module
 
-val appModule= module {
+val appModule = module {
 
     single<FileRepository> { FileRepositoryImpl() }
-    single <UserRepository> { UserRepositoryImpl() }
+    single<UserRepository> { UserRepositoryImpl() }
     // Use Cases
 
     single { GetStorageInfoUseCase(get()) }
@@ -44,8 +44,7 @@ val appModule= module {
     factory { (storageInfo: com.tks.filefort.domain.model.StorageInfo) ->
         StorageInfoScreenModel(storageInfo, get(), get())
     }
-}
+} // <-- Moved this closing brace up
 
 expect fun platformModule(): org.koin.core.module.Module
-
-}
+// Removed the extra closing brace from here
